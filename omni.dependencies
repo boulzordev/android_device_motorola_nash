@@ -64,5 +64,11 @@
   "repository": "android_vendor_nxp_opensource_halimpl",
   "target_path": "vendor/nxp/opensource/halimpl",
   "revision": "android-9.0"
+ },
+ {
+   "remote": "omnirom",
+   "repository": "android_packages_apps_SnapdragonCamera2",
+   "target_path": "packages/apps/SnapdragonCamera2",
+   "revision": "android-9.0"
  }
 ]
