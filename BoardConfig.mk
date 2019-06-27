@@ -197,6 +197,7 @@ VENDOR_SECURITY_PATCH := 2019-05-01
 include device/qcom/sepolicy/sepolicy.mk
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+include vendor/omni/sepolicy/sepolicy.mk
 
 # Time Service
 BOARD_USES_QC_TIME_SERVICES := true
