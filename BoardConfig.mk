@@ -95,8 +95,6 @@ TARGET_BOOTLOADER_BOARD_NAME := Nash
 TARGET_BOARD_PLATFORM := msm8998
 
 # Camera
-TARGET_PROCESS_SDK_VERSION_OVERRIDE := \
-    /vendor/bin/hw/android.hardware.camera.provider@2.4-service=27
 TARGET_USES_QTI_CAMERA_DEVICE := true
 USE_CAMERA_STUB := true
 
@@ -155,9 +153,6 @@ TARGET_KERNEL_SOURCE := kernel/motorola/msm8998
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
 
-# Lineage hardware
-JAVA_SOURCE_OVERLAYS := org.lineageos.hardware|$(DEVICE_PATH)/lineagehw|**/*.java
-
 # NFC
 BOARD_NFC_CHIPSET := pn553
 
@@ -182,10 +177,7 @@ TARGET_USES_MKE2FS := true
 TARGET_USES_INTERACTION_BOOST := true
 
 # RIL
-CUSTOM_APNS_FILE := $(DEVICE_PATH)/configs/sprint_apns.xml
-TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 TARGET_RIL_VARIANT := caf
-TARGET_USES_OLD_MNC_FORMAT := true
 
 # Vendor Security Patch Level
 VENDOR_SECURITY_PATCH := 2019-05-01
